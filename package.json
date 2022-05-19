@@ -4,15 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "npx nodemon --exec ts-node src/server.ts",
+    "dev": "ts-node-dev --transpile-only src/server.ts",
     "typeorm": "npx ts-node ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
+    "@types/node": "^17.0.35",
+    "@types/uuid": "^8.3.4",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "pg": "^8.7.3",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.3.6"
+    "sequelize": "^6.19.2",
+    "typeorm": "^0.3.6",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
